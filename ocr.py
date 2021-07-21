@@ -24,7 +24,7 @@ def read_simple():
                 if date_time > date:
                     date = date_time
             except:
-                print('Invalid date')
+                return 'Invalid date'
         
     date_formatted = date.strftime('%d/%m/%Y')
     return 'A data de validade do produto é {}'.format(date_formatted)
