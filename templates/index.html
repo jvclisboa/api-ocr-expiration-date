@@ -11,22 +11,28 @@
   <link href="{{ url_for('static', path='css/style.css') }}" rel="stylesheet">
   <script src="{{ url_for('static', path='js/script.js')}}"></script>
 </head>
-<body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1> OCR Tool </h1>
-      <p> Extract text from Images <p>
+
+<body style="background-color: #383A59; color: #FFFFFF; margin-top: 8px;">
+  <div class="container" >
+    <div class="jumbotron bg-dark text-center" style="background-color: #282A36;">
+      <img height=225px width=225px src="{{ url_for('static', path='images/logowhite.png')}}" alt="Logo da TAIL">
+      <h1>OCR Data de Validade</h1>
+      <p> Extraia a data de validade a partir de uma imagem <p>
+      
     </div>
-    <label for="image_file">Select image(s)</label>
-    <input class="btn btn-warning" type="file" id="image_file" name="myfile" multiple>
-    <br>
-    <button class="btn btn-success" onclick="performOCR()"> Extract Text </button>
+    <div class="container-upload text-center" style="background-color: #282A36; border-radius: 5px;">
+      <label style="margin-top: 8px;"for="image_file">Selecione a imagem</label>
+      <input  style="width: 350px; margin: 0 auto;"  class="btn btn-default" type="file" id="image_file" name="myfile" multiple  />
+      <br>
+      <button style="background-color: #bd93f9; font-weight: bold; margin-bottom: 8px; border:none;"class="btn btn-default btn-lg" onclick="performOCR()"> Extrair a data </button>
+    </div>
     <div class="modal"></div>
     <br>
-    <hr style="width:100%;text-align:left;margin-left:0">
-    <hr style="width:100%;text-align:left;margin-left:0">
+
+
     <div id="bulk_result" style="display: grid; grid-template-columns: repeat(5, 1fr); grid-gap: 10px;">
   </div>
+
 </body>
 </html>
 

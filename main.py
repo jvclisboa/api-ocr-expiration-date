@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request, File, UploadFile
+from fastapi import FastAPI, Request, File, UploadFile, HTTPException
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 import ocr
@@ -13,10 +13,6 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 @app.get("/")
 def home(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
-
-@app.get("/simpleocr")
-async def simple_ocr():
-    return {"Response": ocr.read_simple()}
 
 @app.post("/postocr")
 async def post_ocr(image: UploadFile = File(...)):
