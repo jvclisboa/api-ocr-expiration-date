@@ -1,4 +1,4 @@
-paddle==2.0.0
+paddlepaddle==2.1.1
 paddleocr>=2.0.1
 PIL==8.0.1
 python-opencv==4.2.0
