@@ -1,7 +1,6 @@
-paddleocr>=2.0.1
 paddle==2.0.0
+paddleocr>=2.0.1
 PIL==8.0.1
-fire==0.4.0
 python-opencv==4.2.0
 numpy==1.19.2
 scipy==1.5.2
