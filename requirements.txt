@@ -1,5 +1,4 @@
 paddlepaddle==2.1.1
-paddleocr>=2.0.1
 PIL==8.0.1
 python-opencv==4.2.0
 numpy==1.19.2
@@ -13,6 +12,7 @@ tqdm
 visualdl
 python-Levenshtein
 opencv-contrib-python==4.2.0.32
+paddleocr>=2.0.1
 aiofiles==0.6.0
 click==7.1.2
 fastapi==0.61.1
