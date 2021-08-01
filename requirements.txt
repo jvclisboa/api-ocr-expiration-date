@@ -1,5 +1,4 @@
-
-PIL==8.0.1
+Pillow==8.0.1
 python-opencv==4.2.0
 numpy==1.19.2
 scipy==1.5.2
@@ -20,7 +19,6 @@ fastapi==0.61.1
 h11==0.11.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
-Pillow==8.0.1
 pydantic==1.7
 python-multipart==0.0.5
 six==1.15.0
