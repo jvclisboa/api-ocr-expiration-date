@@ -9,7 +9,7 @@ lmdb
 tqdm
 visualdl
 python-Levenshtein
-opencv-contrib-python==4.2.0.32
+opencv-python-headless==4.2.0.32
 paddlepaddle==2.1.1
 paddleocr>=2.0.1
 aiofiles==0.6.0
