@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 #import ocr
 import os
 import shutil
-from paddleocr import PaddleOCR,draw_ocr
+from paddleocr import PaddleOCR
 import os 
 from datetime import datetime
 import dateutil.parser
